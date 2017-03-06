@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <title>Mishkа-form</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
 </head>
-<body>
+
+<body class="page">
 
 <header class="page-header">
 
@@ -12,7 +16,7 @@
 
     <div class="page-header__top">
 
-      <a class="page-header__logo" href="#" title="mishka"><img src="#" width="" height="" alt="mishka"></a>
+      <a class="page-header__logo" href="index.html" title="mishka"><img src="#" width="" height="" alt="mishka"></a>
 
       <nav class="main-nav">
 
@@ -21,12 +25,17 @@
         <div class="main-nav__dropdown">
 
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a> </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a> </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a> </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a> </li>
+
             <li class="main-nav__item"><a class="main-nav__link" href="#">
-              <span class="main-nav__icon" ><svg  ></svg></span> Поиск по сайту </a> </li>
+              <span class="main-nav__icon" ><svg  ></svg></span>
+              <label for="search">Поиск по сайту</label>
+              <input class="main-nav__search" type="search" name="search-btn" id="search"></a></li>
+
             <li class="main-nav__item"><a class="main-nav__link" href="#">
-              <span class="main-nav__icon" ><svg></svg></span> Корзина: пока пуста </a></li>
+              <span class="main-nav__icon" ><svg></svg>
+                 </span> Корзина: пока пуста </a></li>
           </ul>
 
         </div>
@@ -54,109 +63,121 @@
 
       <form action="https://echo.htmlacademy.ru/" method="post">
 
-      <div class="radio-btn">
-        <!-- Поле выбора radio-btn -->
-        <h2 class="radio-btn__title">Тип</h2>
+        <div class="type-selection">
+        <!-- Поле выбора типа -->
+          <h2 class="type-selection__title">Тип</h2>
 
-        <ul class="radio-btn__list">
+          <ul class="type-selection__list">
 
-          <li class="radio-btn__item">
+            <li class="type-selection__item">
 
-            <label class="radio-btn__control" for="btn-radio">Аксессуар для интерьера
-              <input class="radio-btn__field" type="radio" name="btn" id="btn-radio" checked/>
+              <label class="type-selection__control" for="btn-1">Аксессуар для интерьера
+                <input class="type-selection__field" type="radio" name="radio-type" id="btn-1" checked/>
 
-              <span class="radio-btn__radio-indicator"></span>
-            </label>
+                <span class="type-selection__radio-indicator"></span>
+              </label>
+            </li>
 
-          </li>
-          <li class="radio-btn__item">
+            <li class="type-selection__item">
 
-            <label class="radio-btn__control" for="btn-r">Детская игрушка
-              <input class="radio-btn__field" type="radio" name="btn" id="btn-r"/>
+              <label class="type-selection__control" for="btn-2">Детская игрушка
+                <input class="type-selection__field" type="radio" name="radio-type" id="btn-2"/>
 
-              <span class="radio-btn__radio-indicator"></span>
-            </label>
+                <span class="type-selection__radio-indicator"></span>
+              </label>
 
-          </li>
+            </li>
 
-        </ul>
-      </div>
+          </ul>
+        </div>
 
-      <div class="checkbox">
-        <!-- Поле выбора checkbox -->
-        <h2 class="checkbox__title">Цвет</h2>
+      </form>
 
-        <ul class="checkbox__list">
+      <form action="https://echo.htmlacademy.ru/" method="post">
 
-          <li class="checkbox__item">
+        <div class="color-selection">
 
-            <label class="checkbox__control" for="check-white">Белый
-              <input class="checkbox__field" type="checkbox" name="check" id="check-white" checked/>
+        <!-- Поле выбора цвета -->
+          <h2 class="color-selection">Цвет</h2>
 
-              <span class="checkbox-indicator"></span>
-            </label>
+          <ul class="color-selection__list">
 
-          </li>
-          <li class="checkbox__item">
+            <li class="checkbox__item">
 
-            <label class="checkbox__control" for="check-gray">Серый
-              <input class="checkbox__field" type="checkbox" name="check" id="check-gray" checked/>
+              <label class="color-selection__control" for="check-white">Белый
+                <input class="color-selection__field" type="checkbox" name="check" id="check-white" checked/>
 
-              <span class="checkbox-indicator"></span>
-            </label>
+                <span class="color-selection-indicator"></span>
+              </label>
 
-          </li>
-          <li class="checkbox__item">
+            </li>
 
-            <label class="checkbox__control" for="check-tiffany">«Тиффани»
-              <input class="checkbox__field" type="checkbox" name="check" id="check-tiffany"/>
+            <li class="color-selection__item">
 
-              <span class="checkbox-indicator"></span>
-            </label>
+              <label class="color-selection__control" for="check-gray">Серый
+                <input class="color-selection__field" type="checkbox" name="check" id="check-gray" checked/>
 
-          </li>
-          <li class="checkbox__item">
+                <span class="color-selection-indicator"></span>
+              </label>
 
-            <label class="checkbox__control" for="check-black">Черный
-              <input class="checkbox__field" type="checkbox" name="check" id="check-black"/>
+            </li>
 
-              <span class="checkbox-indicator"></span>
-            </label>
+            <li class="color-selection__item">
 
-          </li>
-          <li class="checkbox__item">
+              <label class="color-selection__control" for="check-tiffany">«Тиффани»
+                <input class="color-selection__field" type="checkbox" name="check" id="check-tiffany"/>
 
-            <label class="checkbox__control" for="check-pink">Розовый
-              <input class="checkbox__field" type="checkbox" name="check" id="check-pink"/>
+                <span class="color-selection-indicator"></span>
+              </label>
 
-              <span class="checkbox-indicator"></span>
-            </label>
+            </li>
 
-          </li>
-          <li class="checkbox__item">
+            <li class="color-selection__item">
 
-            <label class="checkbox__control" for="check-orange">Оранжевый
-              <input class="checkbox__field" type="checkbox" name="check" id="check-orange"/>
+              <label class="color-selection__control" for="check-black">Черный
+                <input class="color-selection__field" type="checkbox" name="check" id="check-black"/>
 
-              <span class="checkbox-indicator"></span>
-            </label>
+                <span class="color-selection-indicator"></span>
+              </label>
 
-          </li>
+            </li>
 
-        </ul>
+            <li class="color-selection__item">
 
-      </div>
+              <label class="color-selection__control" for="check-pink">Розовый
+                <input class="color-selection__field" type="checkbox" name="check" id="check-pink"/>
+
+                <span class="color-selection-indicator"></span>
+              </label>
+
+            </li>
+
+            <li class="color-selection__item">
+
+              <label class="color-selection__control" for="check-orange">Оранжевый
+                <input class="color-selection__field" type="checkbox" name="check" id="check-orange"/>
+
+                <span class="color-selection-indicator"></span>
+              </label>
+
+            </li>
+
+          </ul>
+
+        </div>
+
       </form>
 
     </section>
 
     <div class="entry-form">
 
-      <form action="#" method="post">
+    <form action="https://echo.htmlacademy.ru/" method="post">
 
-        <p class="entry-form__text">фио</p>
+      <p class="entry-form__text">фио</p>
 
         <div class="entry-form__list">
+
           <label for="form-1">Имя:</label>
           <!-- Поле ввода имя -->
           <input type="text" name="name" id="form-1" placeholder="Введите ваше имя*" required autofocus>
@@ -214,15 +235,15 @@
 
       <ul class="social-links">
 
-        <li><a class="social-links__link" href="https://www.instagram.com" title="Инстаграм">
+        <li><a class="social-links__link social-links--change" href="https://www.instagram.com" title="Инстаграм">
           <svg></svg>
         </a></li>
 
-        <li><a class="" href="https://www.facebook.com" title="Фейсбук">
+        <li><a class="social-links__link social-links--change" href="https://www.facebook.com" title="Фейсбук">
           <svg></svg>
         </a></li>
 
-        <li><a class="" href="https://twitter.com" title="Твиттер">
+        <li><a class="social-links__link social-links--change" href="https://twitter.com" title="Твиттер">
           <svg></svg>
         </a></li>
 
@@ -232,7 +253,7 @@
 
     <div class="page-footer__copyright">
       <span class="page-footer__copyright-text">Разработано</span>
-      <svg></svg>
+      <a href="https://htmlacademy.ru/"><svg></svg></a>
     </div>
 
   </div>

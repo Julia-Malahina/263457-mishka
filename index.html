@@ -7,7 +7,8 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
   <link href="css/style.css" type="text/css" rel="stylesheet" />
 </head>
-<body>
+
+<body class="page">
 
 <header class="page-header">
 
@@ -15,7 +16,7 @@
 
     <div class="page-header__top">
 
-      <a class="page-header__logo" href="#" title="mishka"><img src="#" width="" height="" alt="mishka"></a>
+      <img class="page-header__logo" src="#" width="" height="" alt="mishka">
 
       <nav class="main-nav">
         <!-- Кнопка гамбургера и крестика -->
@@ -27,11 +28,13 @@
 
           <ul class="main-nav__list">
 
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a> </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a> </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a> </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a> </li>
 
-              <span class="main-nav__icon" ><svg ></svg></span> Поиск по сайту </a> </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">
+              <span class="main-nav__icon" ><svg  ></svg></span>
+              <label for="search">Поиск по сайту</label>
+              <input class="main-nav__search" type="search" name="search-btn" id="search"></a></li>
 
             <li class="main-nav__item"><a class="main-nav__link" href="#">
 
@@ -61,7 +64,7 @@
 
     <section class="features">
 
-      <div class="features__title">Милые штуки ручной работы для дома</div>
+      <h1 class="features__title">Милые штуки ручной работы для дома</h1>
 
       <div class="features__list">
 
@@ -85,24 +88,28 @@
 
     <section class="product-week">
 
-      <h1 class="product-week__head">Вязаные корзинки</h1>
+      <h2 class="product-week__head">Вязаные корзинки</h2>
       <span class="product-week__definition">Товар недели</span>
 
       <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
-      <table class="product-week__table" width="100%">
+      <table class="product-week__table">
+
         <tr class="product-week__tr">
-          <td class="product-week__td">Цвет:</td>
-          <td>«Тиффани»/серый</td>
+          <td class="product-week__1">Цвет:</td>
+          <td class="product-week__2">«Тиффани»/серый</td>
         </tr>
-        <tr>
-          <td>Диаметр:</td>
-          <td>25 см</td>
+
+        <tr class="product-week__tr">
+          <td class="product-week__1">Диаметр</td>
+          <td class="product-week__2">25см</td>
         </tr>
-        <tr>
-          <td>Высота:</td>
-          <td>15 см</td>
+
+        <tr class="product-week__tr">
+          <td class="product-week__1">Высота:</td>
+          <td class="product-week__2">15см</td>
         </tr>
+
       </table>
 
       <div class="card-product">
@@ -121,13 +128,13 @@
 
     <section class="our-inform">
 
-      <h1 class="our-inform_title">Коротко о нас:</h1>
+      <h2 class="our-inform__title">Коротко о нас:</h2>
 
       <div class="product-one">
 
-      <img src="#">
+        <img src="#">
 
-      <p class="product-one__text">Экологически чистые материалы</p>
+        <p class="product-one__text">Экологически чистые материалы</p>
 
       </div>
       <div class="product-two">
@@ -172,7 +179,7 @@
 
     <section class="reviews">
 
-      <h1 class="reviews__head">Отзывы</h1>
+      <h2 class="reviews__head">Отзывы</h2>
 
       <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
         В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
@@ -190,15 +197,15 @@
 
       <h2>Контакты</h2>
 
-      <p>
+      <div class="contacts__email">
         <b>e-mail:</b>
-        <a>info@mimimishkashop.ru</a>
-      </p>
+        <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+      </div>
 
-      <p>
+      <div class="contacts__address">
         <b>адрес:</b>
-        <a>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</a>
-      </p>
+        <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+      </div>
 
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1392.944960043567!2d30.321848183359748!3d59.93919749875491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1488484026945" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
 
@@ -220,15 +227,15 @@
 
       <ul class="social-links">
 
-        <li><a class="social-links__link" href="https://www.instagram.com" title="Инстаграм">
+        <li><a class="social-links__link social-links--change" href="https://www.instagram.com" title="Инстаграм">
           <svg></svg>
         </a></li>
 
-        <li><a class="" href="https://www.facebook.com" title="Фейсбук">
+        <li><a class="social-links__link social-links--change" href="https://www.facebook.com" title="Фейсбук">
           <svg></svg>
         </a></li>
 
-        <li><a class="" href="https://twitter.com" title="Твиттер">
+        <li><a class="social-links__link social-links--change" href="https://twitter.com" title="Твиттер">
           <svg></svg>
         </a></li>
 
@@ -238,7 +245,7 @@
 
     <div class="page-footer__copyright">
       <span class="page-footer__copyright-text">Разработано</span>
-      <svg></svg>
+      <a href="https://htmlacademy.ru/"><svg></svg></a>
     </div>
 
   </div>
@@ -255,11 +262,20 @@
 
   <span class="popup-content__text">Выберите размер:</span>
 
-  <div class="popup-content__s">s</div>
-  <div class="popup-content__m">m</div>
-  <div class="popup-content__l">l</div>
+  <form action="https://echo.htmlacademy.ru/" method="post">
 
-  <button class="btn popup-content__btn" type="submit" value="Добавить"></button>
+    <label for="btn-1"></label>
+    <input class="popup-content__s" type="button" name="btn-s" id="btn-1" value="s">
+
+    <label for="btn-2"></label>
+    <input class="popup-content__m" type="button" name="btn-m" id="btn-2" value="m">
+
+    <label for="btn-3"></label>
+    <input class="popup-content__l" type="button" name="btn-l" id="btn-3" value="l">
+
+    <button class="btn popup-content__btn" type="submit">Добавить</button>
+
+    </form>
 
   <div class="popup-overlay"></div>
 

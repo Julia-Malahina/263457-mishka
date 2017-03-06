@@ -3,8 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Mishkа-catalog</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
 </head>
-<body>
+
+<body class="page">
 
 <header class="page-header">
 
@@ -12,7 +16,7 @@
 
     <div class="page-header__top">
 
-      <a class="page-header__logo" href="#" title="mishka"><img src="#" width="" height="" alt="mishka"></a>
+      <a class="page-header__logo" href="index.html" title="mishka"><img src="#" width="" height="" alt="mishka"></a>
 
       <nav class="main-nav">
 
@@ -21,10 +25,14 @@
         <div class="main-nav__dropdown">
 
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a> </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a> </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a> </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a> </li>
+
             <li class="main-nav__item"><a class="main-nav__link" href="#">
-              <span class="main-nav__icon" ><svg  ></svg></span> Поиск по сайту </a> </li>
+              <span class="main-nav__icon" ><svg  ></svg></span>
+              <label for="search">Поиск по сайту</label>
+              <input class="main-nav__search" type="search" name="search-btn" id="search"></a></li>
+
             <li class="main-nav__item"><a class="main-nav__link" href="#">
               <span class="main-nav__icon" ><svg></svg></span> Корзина: пока пуста </a></li>
           </ul>
@@ -47,56 +55,56 @@
 
     <section class="catalog">
 
-      <h1 class="catalog__title"></h1>
+      <h1 class="catalog__title">Каталог товаров</h1>
 
-      <div class="catalog-img">
+      <div class="catalog-product">
 
-        <a href="#"><img src="#" alt="Зайчик-попрыгайчик"></a>
-        <p class="catalog-img__text">Зайчик-попрыгайчик</p>
-        <p class="catalog-img__item">Рост 30 см, вес 200 г</p>
-        <span class="catalog-img__tax">1 200 руб.
+        <a href="form.html"><img src="#" alt=<"Зайчик-попрыгайчик"></a>
+        <a href="form.html"><p class="catalog-product__text">Зайчик-попрыгайчик</p></a>
+        <p class="catalog-product__item">Рост 30 см, вес 200 г</p>
+        <span class="catalog-product__tax">1 200 руб.
           <img src="#" alt="корзина">
         </span>
 
       </div>
 
-      <div class="catalog-img">
+      <div class="catalog-product">
 
         <a href="#"><img src="#" alt="Корзинка для белья"></a>
-        <p class="catalog-img__text">Корзинка для белья</p>
-        <p class="catalog-img__item">Диаметр 15 см, высота 10 см</p>
-        <span class="catalog-img__tax">690 руб.
+        <p class="catalog-product__text">Корзинка для белья</p>
+        <p class="catalog-product__item">Диаметр 15 см, высота 10 см</p>
+        <span class="catalog-product__tax">690 руб.
           <img src="#" alt="корзина">
         </span>
 
       </div>
 
-      <div class="catalog-img">
+      <div class="catalog-product">
 
         <a href="#"><img src="#" alt="Большая корзинка для игрушек"></a>
-        <p class="catalog-img__text">Большая корзинка для игрушек</p>
-        <p class="catalog-img__item">Диаметр 30 см, высота 30 см</p>
-        <span class="catalog-img__tax">1500 руб.
+        <p class="catalog-product__text">Большая корзинка для игрушек</p>
+        <p class="catalog-product__item">Диаметр 30 см, высота 30 см</p>
+        <span class="catalog-product__tax">1500 руб.
           <img src="#" alt="корзина">
         </span>
 
       </div>
 
-      <div class="catalog-img">
+      <div class="catalog-product">
 
-        <div class="catalog-img__video">
+        <div class="catalog-product__video">
 
         <a href="#"><img src="#" alt="Видео"></a>
 
-        <p class="catalog-img__text">Процесс производства</p>
+        <p class="catalog-product__text">Процесс производства</p>
 
         </div>
 
-        <span class="catalog-img__tax">
+        <span class="catalog-product__tax">
           <img src="#" alt="корзина">
         </span>
 
-        <p class="catalog-img__item">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <p class="catalog-product__item">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
 
         <button class="btn modal-content__btn" type="submit">Сделать заказ</button>
 
@@ -116,15 +124,15 @@
 
         <ul class="social-links">
 
-          <li><a class="social-links__link" href="https://www.instagram.com" title="Инстаграм">
+          <li><a class="social-links__link social-links--change" href="https://www.instagram.com" title="Инстаграм">
             <svg></svg>
           </a></li>
 
-          <li><a class="" href="https://www.facebook.com" title="Фейсбук">
+          <li><a class="social-links__link social-links--change" href="https://www.facebook.com" title="Фейсбук">
             <svg></svg>
           </a></li>
 
-          <li><a class="" href="https://twitter.com" title="Твиттер">
+          <li><a class="social-links__link social-links--change" href="https://twitter.com" title="Твиттер">
             <svg></svg>
           </a></li>
 
@@ -134,7 +142,7 @@
 
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
-        <svg></svg>
+        <a href="https://htmlacademy.ru/"><svg></svg></a>
       </div>
 
     </div>
