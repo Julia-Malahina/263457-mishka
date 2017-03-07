@@ -26,21 +26,18 @@
 
           <div class="main-nav__dropdown__inner">
 
-          <ul class="main-nav__list">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a> </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a> </li>
 
-            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a> </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a> </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту
+                <span class="main-nav__icon" ><svg  ></svg></span></a></li>
 
-            <li class="main-nav__item"><a class="main-nav__link" href="#">
-              <span class="main-nav__icon" ><svg  ></svg></span>
-              <label for="search">Поиск по сайту</label>
-              <input class="main-nav__search" type="search" name="search-btn" id="search"></a></li>
 
-            <li class="main-nav__item"><a class="main-nav__link" href="#">
 
-              <span class="main-nav__icon" ><svg></svg></span> Корзина: пока пуста </a></li>
-
-          </ul>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста
+                <span class="main-nav__icon" ><svg></svg></span></a></li>
+            </ul>
 
         </div>
 
@@ -96,18 +93,18 @@
       <table class="product-week__table">
 
         <tr class="product-week__tr">
-          <td class="product-week__1">Цвет:</td>
-          <td class="product-week__2">«Тиффани»/серый</td>
+          <td class="product-week__color">Цвет:</td>
+          <td class="product-week__size">«Тиффани»/серый</td>
         </tr>
 
         <tr class="product-week__tr">
-          <td class="product-week__1">Диаметр</td>
-          <td class="product-week__2">25см</td>
+          <td class="product-week__diam">Диаметр</td>
+          <td class="product-week__size">25см</td>
         </tr>
 
         <tr class="product-week__tr">
-          <td class="product-week__1">Высота:</td>
-          <td class="product-week__2">15см</td>
+          <td class="product-week__height">Высота:</td>
+          <td class="product-week__size">15см</td>
         </tr>
 
       </table>
@@ -258,28 +255,28 @@
 
   <button class="popup-content__close" type="button" title="Закрыть">Закрыть</button>
 
-  <h1 class="popup-content__title">Добавить в корзину</h1>
+  <div class="popup-content__title">Добавить в корзину</div>
 
   <span class="popup-content__text">Выберите размер:</span>
 
-  <form action="https://echo.htmlacademy.ru/" method="post">
+  <form class="popup-content__write-form" action="https://echo.htmlacademy.ru/" method="post">
 
     <label for="btn-1"></label>
-    <input class="popup-content__s" type="button" name="btn-s" id="btn-1" value="s">
+    <input class="popup-content__small" type="button" name="btn-s" id="btn-1" value="s">
 
     <label for="btn-2"></label>
-    <input class="popup-content__m" type="button" name="btn-m" id="btn-2" value="m">
+    <input class="popup-content__medium" type="button" name="btn-m" id="btn-2" value="m">
 
     <label for="btn-3"></label>
-    <input class="popup-content__l" type="button" name="btn-l" id="btn-3" value="l">
+    <input class="popup-content__long" type="button" name="btn-l" id="btn-3" value="l">
 
     <button class="btn popup-content__btn" type="submit">Добавить</button>
 
     </form>
 
-  <div class="popup-overlay"></div>
-
 </div>
+
+<div class="popup-overlay"></div>
 
 </body>
 </html>

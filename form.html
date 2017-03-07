@@ -25,17 +25,16 @@
         <div class="main-nav__dropdown">
 
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a> </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a> </li>
+            <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a> </li>
+            <li class="main-nav__item"><a class="main-nav__link">Вязание на заказ</a> </li>
 
-            <li class="main-nav__item"><a class="main-nav__link" href="#">
-              <span class="main-nav__icon" ><svg  ></svg></span>
-              <label for="search">Поиск по сайту</label>
-              <input class="main-nav__search" type="search" name="search-btn" id="search"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту
+              <span class="main-nav__icon" ><svg  ></svg></span></a></li>
 
-            <li class="main-nav__item"><a class="main-nav__link" href="#">
-              <span class="main-nav__icon" ><svg></svg>
-                 </span> Корзина: пока пуста </a></li>
+
+
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста
+              <span class="main-nav__icon" ><svg></svg></span></a></li>
           </ul>
 
         </div>
@@ -56,14 +55,14 @@
 
     <section class="choice-form">
 
+    <form action="https://echo.htmlacademy.ru/" method="post">
+
       <div class="orders">
         <h1 class="orders__title">Вязание на заказ</h1>
         <p class="orders__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
 
-      <form action="https://echo.htmlacademy.ru/" method="post">
-
-        <div class="type-selection">
+      <div class="type-selection">
         <!-- Поле выбора типа -->
           <h2 class="type-selection__title">Тип</h2>
 
@@ -71,31 +70,28 @@
 
             <li class="type-selection__item">
 
-              <label class="type-selection__control" for="btn-1">Аксессуар для интерьера
+              <label class="type-selection__control" for="btn-1">Аксессуар для интерьера</label>
                 <input class="type-selection__field" type="radio" name="radio-type" id="btn-1" checked/>
 
                 <span class="type-selection__radio-indicator"></span>
-              </label>
+
             </li>
 
             <li class="type-selection__item">
 
-              <label class="type-selection__control" for="btn-2">Детская игрушка
+              <label class="type-selection__control" for="btn-2">Детская игрушка </label>
                 <input class="type-selection__field" type="radio" name="radio-type" id="btn-2"/>
 
                 <span class="type-selection__radio-indicator"></span>
-              </label>
+
 
             </li>
 
           </ul>
+
         </div>
 
-      </form>
-
-      <form action="https://echo.htmlacademy.ru/" method="post">
-
-        <div class="color-selection">
+        <div class="type-selection">
 
         <!-- Поле выбора цвета -->
           <h2 class="color-selection">Цвет</h2>
@@ -104,51 +100,46 @@
 
             <li class="checkbox__item">
 
-              <label class="color-selection__control" for="check-white">Белый
+              <label class="color-selection__control" for="check-white">Белый</label>
                 <input class="color-selection__field" type="checkbox" name="check" id="check-white" checked/>
 
                 <span class="color-selection-indicator"></span>
-              </label>
 
             </li>
 
             <li class="color-selection__item">
 
-              <label class="color-selection__control" for="check-gray">Серый
+              <label class="color-selection__control" for="check-gray">Серый</label>
                 <input class="color-selection__field" type="checkbox" name="check" id="check-gray" checked/>
 
                 <span class="color-selection-indicator"></span>
-              </label>
 
             </li>
 
             <li class="color-selection__item">
 
-              <label class="color-selection__control" for="check-tiffany">«Тиффани»
+              <label class="color-selection__control" for="check-tiffany">«Тиффани»</label>
                 <input class="color-selection__field" type="checkbox" name="check" id="check-tiffany"/>
 
                 <span class="color-selection-indicator"></span>
-              </label>
 
             </li>
 
             <li class="color-selection__item">
 
-              <label class="color-selection__control" for="check-black">Черный
+              <label class="color-selection__control" for="check-black">Черный</label>
                 <input class="color-selection__field" type="checkbox" name="check" id="check-black"/>
 
                 <span class="color-selection-indicator"></span>
-              </label>
 
             </li>
 
             <li class="color-selection__item">
 
-              <label class="color-selection__control" for="check-pink">Розовый
+              <label class="color-selection__control" for="check-pink">Розовый</label>
                 <input class="color-selection__field" type="checkbox" name="check" id="check-pink"/>
 
                 <span class="color-selection-indicator"></span>
-              </label>
 
             </li>
 
@@ -166,13 +157,7 @@
 
         </div>
 
-      </form>
-
-    </section>
-
-    <div class="entry-form">
-
-    <form action="https://echo.htmlacademy.ru/" method="post">
+      <div class="type-selection">
 
       <p class="entry-form__text">фио</p>
 
@@ -219,9 +204,11 @@
 
         <button class="btn" type="submit">Отправить заказ</button>
 
-      </form>
-
     </div>
+
+    </form>
+
+    </section>
 
   </div>
 
