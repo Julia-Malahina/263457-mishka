@@ -10,37 +10,31 @@
 
 <body class="page">
 
+
 <header class="page-header">
 
   <div class="page-header__inner">
 
     <div class="page-header__top">
 
-      <img class="page-header__logo" src="#" width="" height="" alt="mishka">
+      <div class="page-header__logo">
+        <a class="page-header__logo-link" href="index.html" title="mishka">
+          <img  src="#" width="" height="" alt="mishka">
+        </a>
+      </div>
 
 
       <nav class="main-nav">
-        <!-- Кнопка гамбургера и крестика -->
-        <button class="main-nav__trigger--menu" type="submit"><span></span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
 
-        <div class="main-nav__dropdown">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту
+            <span class="main-nav__icon" ><svg  ></svg></span></a></li>
 
-          <div class="main-nav__dropdown__inner">
-
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
-
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту
-                <span class="main-nav__icon" ><svg  ></svg></span></a></li>
-
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста
-                <span class="main-nav__icon" ><svg></svg></span></a></li>
-            </ul>
-
-          </div>
-
-        </div>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста
+            <span class="main-nav__icon" ><svg></svg></span></a></li>
+        </ul>
 
       </nav>
 
@@ -48,16 +42,20 @@
 
   </div>
 
+  <div class="main-nav__trigger--menu">
+    <button  type="submit"><span></span></button>
+  </div>
+
 </header>
 
 
 <main class="page-content">
 
-  <section class="catalog">
+  <article class="catalog">
     <div class="catalog__inner">
       <h1 class="catalog__title">Каталог товаров</h1>
     </div>
-  </section>
+  </article>
 
 
   <article class="catalog-product">
@@ -113,13 +111,15 @@
 
   <article class="catalog-product">
     <div class="catalog-product__inner">
-
       <h2 class="catalog-product__text">Процесс производства</h2>
 
+      <div class="catalog-product__list">
       <img class="catalog-product__video" src="#" alt="Процесс производства">
 
       <a href="#" class="btn btn--play">Play</a>
       <p class="catalog-product__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+
+      </div>
 
       <button class="btn modal-content__btn" type="submit">Сделать заказ</button>
 
