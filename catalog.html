@@ -16,30 +16,31 @@
 
     <div class="page-header__top">
 
-      <a class="page-header__logo" href="index.html" title="mishka"><img src="#" width="" height="" alt="mishka"></a>
+      <img class="page-header__logo" src="#" width="" height="" alt="mishka">
+
 
       <nav class="main-nav">
-
-        <button class="main-nav__trigger--menu" type="submit"><span ></span></button>
+        <!-- Кнопка гамбургера и крестика -->
+        <button class="main-nav__trigger--menu" type="submit"><span></span></button>
 
         <div class="main-nav__dropdown">
 
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a> </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a> </li>
+          <div class="main-nav__dropdown__inner">
 
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту
-              <span class="main-nav__icon" ><svg  ></svg></span></a></li>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
 
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту
+                <span class="main-nav__icon" ><svg  ></svg></span></a></li>
 
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста
+                <span class="main-nav__icon" ><svg></svg></span></a></li>
+            </ul>
 
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста
-              <span class="main-nav__icon" ><svg></svg></span></a></li>
-          </ul>
+          </div>
 
         </div>
-
-        <a href="#" class="main-nav__toggle  main-nav__toggle--close"></a>
 
       </nav>
 
@@ -49,72 +50,86 @@
 
 </header>
 
-<div class="page-content">
 
-  <div class="page-content__inner">
+<main class="page-content">
 
-    <section class="catalog">
-
+  <section class="catalog">
+    <div class="catalog__inner">
       <h1 class="catalog__title">Каталог товаров</h1>
+    </div>
+  </section>
 
-      <div class="catalog-product">
 
-        <a href="#"><img src="#" alt="Зайчик-попрыгайчик"></a>
+  <article class="catalog-product">
+    <div class="catalog-product__inner">
+
+      <a href="#"><img src="#" alt="Зайчик-попрыгайчик"></a>
+
+      <div class="catalog-product__relation">
         <p class="catalog-product__text"><a href="#">Зайчик-попрыгайчик</a></p>
         <p class="catalog-product__item">Рост 30 см, вес 200 г</p>
-        <span class="catalog-product__tax">1 200 руб.
-          <img src="#" alt="корзина">
-        </span>
-
+        <span class="catalog-product__tax">1 200 руб.</span>
+        <a href="#"><img src="#" alt="корзина"></a>
       </div>
 
-      <div class="catalog-product">
+    </div>
 
-        <a href="#"><img src="#" alt="Корзинка для белья"></a>
+  </article>
+
+
+  <article class="catalog-product">
+    <div class="catalog-product__inner">
+
+      <a href="#"><img src="#" alt="Корзинка для белья"></a>
+
+      <div class="catalog-product__relation">
         <p class="catalog-product__text"><a href="#">Корзинка для белья</a></p>
         <p class="catalog-product__item">Диаметр 15 см, высота 10 см</p>
-        <span class="catalog-product__tax">690 руб.
-          <img src="#" alt="корзина">
-        </span>
-
+        <span class="catalog-product__tax">690 руб.</span>
+        <a href="#"><img src="#" alt="корзина"></a>
       </div>
 
-      <div class="catalog-product">
+    </div>
 
-        <a href="#"><img src="#" alt="Большая корзинка для игрушек"></a>
+  </article>
+
+
+  <article class="catalog-product">
+    <div class="catalog-product__inner">
+
+      <a href="#"><img src="#" alt="Большая корзинка для игрушек"></a>
+
+      <div class="catalog-product__relation">
         <p class="catalog-product__text"><a href="#">Большая корзинка для игрушек</a></p>
         <p class="catalog-product__item">Диаметр 30 см, высота 30 см</p>
-        <span class="catalog-product__tax">1500 руб.
-          <img src="#" alt="корзина">
-        </span>
-
+        <span class="catalog-product__tax">1500 руб.</span>
+        <a href="#"><img src="#" alt="корзина"></a>
       </div>
 
-      <div class="catalog-product">
+    </div>
 
-        <div class="catalog-product__video">
+  </article>
 
-          <a href="#"><img src="#" alt="Видео"></a>
 
-          <p class="catalog-product__text">Процесс производства</p>
+  <article class="catalog-product">
+    <div class="catalog-product__inner">
 
-        </div>
+      <h2 class="catalog-product__text">Процесс производства</h2>
 
-        <span class="catalog-product__tax">
-          <img src="#" alt="корзина">
-        </span>
+      <img class="catalog-product__video" src="#" alt="Процесс производства">
 
-        <p class="catalog-product__item">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a href="#" class="btn btn--play">Play</a>
+      <p class="catalog-product__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
 
-        <button class="btn modal-content__btn" type="submit">Сделать заказ</button>
+      <button class="btn modal-content__btn" type="submit">Сделать заказ</button>
 
-      </div>
+    </div>
 
-    </section>
+  </article>
 
-  </div>
 
-</div>
+</main>
+
 
 <footer class="page-footer">
 
