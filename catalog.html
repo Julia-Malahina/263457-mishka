@@ -113,11 +113,9 @@
     <div class="catalog-product__inner">
       <h2 class="catalog-product__text">Процесс производства</h2>
 
-      <div class="catalog-product__list">
-      <img class="catalog-product__video" src="#" alt="Процесс производства">
-
-      <a href="#" class="btn btn--play">Play</a>
-      <p class="catalog-product__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <div class="catalog-product__video">
+        <a class="video-container"> <img class="catalog-product__video-preview" src="#" alt="Процесс производства">Play</a>
+        <p class="catalog-product__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
 
       </div>
 
@@ -163,6 +161,37 @@
     </div>
 
 </footer>
+
+
+<!-- Блок - Всплывающее окно -->
+
+<div class="popup-content">
+
+  <div class="popup-content__inner">
+
+    <button class="popup-content__close" type="button" title="Закрыть">Закрыть</button>
+
+    <h2 class="popup-content__title">Добавить в корзину</h2>
+    <span class="popup-content__text">Выберите размер:</span>
+
+    <form class="popup-content__write-form" action="https://echo.htmlacademy.ru/" method="post">
+
+      <button class="btn popup-content__button" type="submit">s</button>
+
+      <button class="btn popup-content__button" type="submit">m</button>
+
+      <button class="btn popup-content__button" type="submit">l</button>
+
+
+      <button class="btn popup-content__btn" type="submit">Добавить</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+<div class="popup-overlay"></div>
 
 </body>
 </html>
