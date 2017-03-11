@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Mishkа-catalog</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body class="page">
+
+
+<header class="page-header">
+
+  <div class="page-header__inner">
+
+    <div class="page-header__top">
+
+      <div class="page-header__logo">
+        <a class="page-header__logo-link" href="index.html" title="mishka">
+          <img  src="#" width="" height="" alt="mishka">
+        </a>
+      </div>
+
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту
+            <span class="main-nav__icon" ><svg  ></svg></span></a></li>
+
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста
+            <span class="main-nav__icon" ><svg></svg></span></a></li>
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </div>
+
+  <div class="main-nav__trigger--menu">
+    <button  type="submit"><span></span></button>
+  </div>
+
+</header>
+
+
+<main class="page-content">
+
+  <article class="catalog">
+    <div class="catalog__inner">
+      <h1 class="catalog__title">Каталог товаров</h1>
+    </div>
+  </article>
+
+
+  <article class="catalog-product">
+    <div class="catalog-product__inner">
+
+      <a href="#"><img src="#" alt="Зайчик-попрыгайчик"></a>
+
+      <div class="catalog-product__relation">
+        <p class="catalog-product__text"><a href="#">Зайчик-попрыгайчик</a></p>
+        <p class="catalog-product__item">Рост 30 см, вес 200 г</p>
+        <span class="catalog-product__tax">1 200 руб.</span>
+        <a href="#"><img src="#" alt="корзина"></a>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <article class="catalog-product">
+    <div class="catalog-product__inner">
+
+      <a href="#"><img src="#" alt="Корзинка для белья"></a>
+
+      <div class="catalog-product__relation">
+        <p class="catalog-product__text"><a href="#">Корзинка для белья</a></p>
+        <p class="catalog-product__item">Диаметр 15 см, высота 10 см</p>
+        <span class="catalog-product__tax">690 руб.</span>
+        <a href="#"><img src="#" alt="корзина"></a>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <article class="catalog-product">
+    <div class="catalog-product__inner">
+
+      <a href="#"><img src="#" alt="Большая корзинка для игрушек"></a>
+
+      <div class="catalog-product__relation">
+        <p class="catalog-product__text"><a href="#">Большая корзинка для игрушек</a></p>
+        <p class="catalog-product__item">Диаметр 30 см, высота 30 см</p>
+        <span class="catalog-product__tax">1500 руб.</span>
+        <a href="#"><img src="#" alt="корзина"></a>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <article class="catalog-product">
+    <div class="catalog-product__inner">
+      <h2 class="catalog-product__text">Процесс производства</h2>
+
+      <div class="catalog-product__video">
+        <a class="video-container"> <img class="catalog-product__video-preview" src="#" alt="Процесс производства">Play</a>
+        <p class="catalog-product__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+
+      </div>
+
+      <button class="btn modal-content__btn" type="submit">Сделать заказ</button>
+
+    </div>
+
+  </article>
+
+
+</main>
+
+
+<footer class="page-footer">
+
+    <div class="page-footer__inner">
+
+      <div class="page-footer__social">
+
+        <ul class="social-links">
+
+          <li><a class="social-links__link social-links__link--change" href="https://www.instagram.com" title="Инстаграм">
+            <svg></svg>
+          </a></li>
+
+          <li><a class="social-links__link social-links__link--change" href="https://www.facebook.com" title="Фейсбук">
+            <svg></svg>
+          </a></li>
+
+          <li><a class="social-links__link social-links__link--change" href="https://twitter.com" title="Твиттер">
+            <svg></svg>
+          </a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a href="https://htmlacademy.ru/"><svg></svg></a>
+      </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Блок - Всплывающее окно -->
+
+<div class="popup-content">
+
+  <div class="popup-content__inner">
+
+    <button class="popup-content__close" type="button" title="Закрыть">Закрыть</button>
+
+    <h2 class="popup-content__title">Добавить в корзину</h2>
+    <span class="popup-content__text">Выберите размер:</span>
+
+    <form class="popup-content__write-form" action="https://echo.htmlacademy.ru/" method="post">
+
+      <button class="btn popup-content__button" type="submit">s</button>
+
+      <button class="btn popup-content__button" type="submit">m</button>
+
+      <button class="btn popup-content__button" type="submit">l</button>
+
+
+      <button class="btn popup-content__btn" type="submit">Добавить</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+<div class="popup-overlay"></div>
+
+</body>
+</html>
